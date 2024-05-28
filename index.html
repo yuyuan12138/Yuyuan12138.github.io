@@ -236,7 +236,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.1k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -257,22 +257,22 @@
       
           <h1 id="Understanding-Test-Statistics-in-Hypothesis-Testing"><a href="#Understanding-Test-Statistics-in-Hypothesis-Testing" class="headerlink" title="Understanding Test Statistics in Hypothesis Testing"></a>Understanding Test Statistics in Hypothesis Testing</h1><p>In hypothesis testing, constructing test statistics is a crucial and often challenging step. By leveraging known theorems, we can simplify complex problems by transforming them into familiar statistics. Here, I’ll explain some common derivations involving these transformations.</p>
 <h2 id="Transformations-Between-Distributions"><a href="#Transformations-Between-Distributions" class="headerlink" title="Transformations Between Distributions"></a>Transformations Between Distributions</h2><h3 id="Exponential-and-Chi-Square-Distributions"><a href="#Exponential-and-Chi-Square-Distributions" class="headerlink" title="Exponential and Chi-Square Distributions"></a>Exponential and Chi-Square Distributions</h3><p>The relationship between the exponential distribution and the chi-square distribution is foundational in statistics. Suppose we have a random variable $X$ that follows an exponential distribution with parameter $\lambda$:</p>
-<p>$$<br>X \sim Exp(\lambda)<br>$$</p>
-<p>The exponential distribution can be transformed into a chi-square distribution. If we scale $X$ by $2\lambda$, we get a chi-square distribution with two degrees of freedom:</p>
-<p>$$<br>2\lambda X\sim \chi^2(2)<br>$$</p>
-<p>This transformation simplifies the analysis by allowing us to use properties of the chi-square distribution.</p>
+<script type="math/tex; mode=display">
+X \sim Exp(\lambda)</script><p>The exponential distribution can be transformed into a chi-square distribution. If we scale $X$ by $2\lambda$, we get a chi-square distribution with two degrees of freedom:</p>
+<script type="math/tex; mode=display">
+2\lambda X\sim \chi^2(2)</script><p>This transformation simplifies the analysis by allowing us to use properties of the chi-square distribution.</p>
 <h3 id="Gamma-and-Chi-Square-Distributions"><a href="#Gamma-and-Chi-Square-Distributions" class="headerlink" title="Gamma and Chi-Square Distributions"></a>Gamma and Chi-Square Distributions</h3><p>The gamma distribution is a generalization of the exponential distribution. If a random variable $Y$ follows a gamma distribution with shape parameter $\alpha$ and rate parameter $\beta$:</p>
-<p>$$<br>Y \sim Gamma(\alpha, \beta)<br>$$</p>
-<p>when $\alpha &#x3D; \frac{k}{2}$ and $\beta &#x3D; \frac{1}{2}$, $Y$ is equivalent to a chi-square distribution with $k$ degrees of freedom:</p>
-<p>$$<br>Y \sim \chi^2(k)<br>$$</p>
-<p>This equivalence is useful for deriving properties and performing tests involving the gamma distribution.</p>
+<script type="math/tex; mode=display">
+Y \sim Gamma(\alpha, \beta)</script><p>when $\alpha = \frac{k}{2}$ and $\beta = \frac{1}{2}$, $Y$ is equivalent to a chi-square distribution with $k$ degrees of freedom:</p>
+<script type="math/tex; mode=display">
+Y \sim \chi^2(k)</script><p>This equivalence is useful for deriving properties and performing tests involving the gamma distribution.</p>
 <h2 id="Sample-Variance-and-Chi-Square-Distribution"><a href="#Sample-Variance-and-Chi-Square-Distribution" class="headerlink" title="Sample Variance and Chi-Square Distribution"></a>Sample Variance and Chi-Square Distribution</h2><p>When dealing with normally distributed samples, the relationship between sample variance and the chi-square distribution is particularly important. For sample of size $n$ from a normal distribution $\mathcal{N}(\mu, \sigma^2)$:</p>
-<p>$$<br>X_1, X_2, \cdots,X_n \sim \mathcal{N}(\mu, \sigma^2)<br>$$</p>
-<p>The sample variance $S^2$ is defined as:</p>
-<p>$$<br>S^2 &#x3D; \frac{1}{n - 1}\sum^n_{i&#x3D;1}(X_i - \bar{X})^2<br>$$</p>
-<p>where $\bar{X}$ is the sample mean. The statistic $(n-1)S^2&#x2F;\sigma^2$ follows a chi-square distribution with $n-1$ degrees of freedom:</p>
-<p>$$<br>\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)<br>$$</p>
-<p>This result is fundamental in constructing confidence intervals and performing hypothesis tests about the population variance.</p>
+<script type="math/tex; mode=display">
+X_1, X_2, \cdots,X_n \sim \mathcal{N}(\mu, \sigma^2)</script><p>The sample variance $S^2$ is defined as:</p>
+<script type="math/tex; mode=display">
+S^2 = \frac{1}{n - 1}\sum^n_{i=1}(X_i - \bar{X})^2</script><p>where $\bar{X}$ is the sample mean. The statistic $(n-1)S^2/\sigma^2$ follows a chi-square distribution with $n-1$ degrees of freedom:</p>
+<script type="math/tex; mode=display">
+\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)</script><p>This result is fundamental in constructing confidence intervals and performing hypothesis tests about the population variance.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>By understanding and applying these transformations, we can simplify the process of constructing test statistics.</p>
 
       
@@ -369,10 +369,10 @@
 <p>Aside from these, I harbour a profound interest in Machine Learning (ML). In my opinion, ML is one of the most exhilarating and dynamic fields in the contemporary world. It has the potential to revolutionize various aspects of our lives and our society. I am keen on utilizing this blog as a platform to share my knowledge and insights about ML. My hope is to pique the interest of my readers in this riveting area, thereby fostering a community of individuals who share a common love for ML.</p>
 <p>Moving forward, I have a few tasks that I need to prioritize and accomplish. Here’s my to-do list:</p>
 <h2 id="To-Do-List"><a href="#To-Do-List" class="headerlink" title="To-Do List:"></a>To-Do List:</h2><ul>
-<li><input disabled="" type="checkbox"> Create comprehensive content outlines for mathematics tutorials. This involves identifying key topics and subtopics, designing engaging and interactive lesson plans, and preparing relevant resources.</li>
-<li><input disabled="" type="checkbox"> Document my reflections on life for future blog posts. This would involve regular introspection and journaling, followed by drafting and revising blog posts.</li>
-<li><input disabled="" type="checkbox"> Strategize and plan out ML articles and tutorials. This requires staying updated with the latest trends and advancements in ML, identifying topics that would interest my readers, and then creating well-researched and informative content.</li>
-<li><input disabled="" type="checkbox"> Improve my English writing skills. This blog will serve as a platform for me to practice and enhance my English writing capabilities. I plan to write most of my posts in English, which will not only allow me to reach a wider audience but also help me become more proficient in expressing my thoughts and ideas in English.</li>
+<li>[ ] Create comprehensive content outlines for mathematics tutorials. This involves identifying key topics and subtopics, designing engaging and interactive lesson plans, and preparing relevant resources.</li>
+<li>[ ] Document my reflections on life for future blog posts. This would involve regular introspection and journaling, followed by drafting and revising blog posts.</li>
+<li>[ ] Strategize and plan out ML articles and tutorials. This requires staying updated with the latest trends and advancements in ML, identifying topics that would interest my readers, and then creating well-researched and informative content.</li>
+<li>[ ] Improve my English writing skills. This blog will serve as a platform for me to practice and enhance my English writing capabilities. I plan to write most of my posts in English, which will not only allow me to reach a wider audience but also help me become more proficient in expressing my thoughts and ideas in English.</li>
 </ul>
 <p>This blog is designed with the purpose of sharing knowledge in mathematics, life reflections, and insights about Machine Learning (ML). The objective is to make mathematics more accessible, share life experiences, and cultivate a community interested in ML. Looking ahead, the tasks include creating content for mathematics tutorials, documenting life reflections, planning ML articles, and improving English writing skills. The future vision involves enhancing the approachability of mathematics, fostering meaningful discussions through shared experiences, and building a community passionate about ML.</p>
 
@@ -528,16 +528,12 @@
       
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
@@ -693,7 +689,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">There is 942 words in total.</span>
+  <span class="post-count">There is 936 words in total.</span>
 </div>
 
 
@@ -747,6 +743,8 @@
 
 
 
+
+  
 
   
 
