@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Understanding Test Statistics in Hypothesis Testing</title>
+      <link href="/2024/05/28/Understanding%20Test%20Statistics%20in%20Hypothesis%20Test/"/>
+      <url>/2024/05/28/Understanding%20Test%20Statistics%20in%20Hypothesis%20Test/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Understanding-Test-Statistics-in-Hypothesis-Testing"><a href="#Understanding-Test-Statistics-in-Hypothesis-Testing" class="headerlink" title="Understanding Test Statistics in Hypothesis Testing"></a>Understanding Test Statistics in Hypothesis Testing</h1><p>In hypothesis testing, constructing test statistics is a crucial and often challenging step. By leveraging known theorems, we can simplify complex problems by transforming them into familiar statistics. Here, I’ll explain some common derivations involving these transformations.</p><h2 id="Transformations-Between-Distributions"><a href="#Transformations-Between-Distributions" class="headerlink" title="Transformations Between Distributions"></a>Transformations Between Distributions</h2><h3 id="Exponential-and-Chi-Square-Distributions"><a href="#Exponential-and-Chi-Square-Distributions" class="headerlink" title="Exponential and Chi-Square Distributions"></a>Exponential and Chi-Square Distributions</h3><p>The relationship between the exponential distribution and the chi-square distribution is foundational in statistics. Suppose we have a random variable $X$ that follows an exponential distribution with parameter $\lambda$:</p><p>$$<br>X \sim Exp(\lambda)<br>$$</p><p>The exponential distribution can be transformed into a chi-square distribution. If we scale $X$ by $2\lambda$, we get a chi-square distribution with two degrees of freedom:</p><p>$$<br>2\lambda X\sim \chi^2(2)<br>$$</p><p>This transformation simplifies the analysis by allowing us to use properties of the chi-square distribution.</p><h3 id="Gamma-and-Chi-Square-Distributions"><a href="#Gamma-and-Chi-Square-Distributions" class="headerlink" title="Gamma and Chi-Square Distributions"></a>Gamma and Chi-Square Distributions</h3><p>The gamma distribution is a generalization of the exponential distribution. If a random variable $Y$ follows a gamma distribution with shape parameter $\alpha$ and rate parameter $\beta$:</p><p>$$<br>Y \sim Gamma(\alpha, \beta)<br>$$</p><p>when $\alpha &#x3D; \frac{k}{2}$ and $\beta &#x3D; \frac{1}{2}$, $Y$ is equivalent to a chi-square distribution with $k$ degrees of freedom:</p><p>$$<br>Y \sim \chi^2(k)<br>$$</p><p>This equivalence is useful for deriving properties and performing tests involving the gamma distribution.</p><h2 id="Sample-Variance-and-Chi-Square-Distribution"><a href="#Sample-Variance-and-Chi-Square-Distribution" class="headerlink" title="Sample Variance and Chi-Square Distribution"></a>Sample Variance and Chi-Square Distribution</h2><p>When dealing with normally distributed samples, the relationship between sample variance and the chi-square distribution is particularly important. For sample of size $n$ from a normal distribution $\mathcal{N}(\mu, \sigma^2)$:</p><p>$$<br>X_1, X_2, \cdots,X_n \sim \mathcal{N}(\mu, \sigma^2)<br>$$</p><p>The sample variance $S^2$ is defined as:</p><p>$$<br>S^2 &#x3D; \frac{1}{n - 1}\sum^n_{i&#x3D;1}(X_i - \bar{X})^2<br>$$</p><p>where $\bar{X}$ is the sample mean. The statistic $(n-1)S^2&#x2F;\sigma^2$ follows a chi-square distribution with $n-1$ degrees of freedom:</p><p>$$<br>\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)<br>$$</p><p>This result is fundamental in constructing confidence intervals and performing hypothesis tests about the population variance.</p><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>By understanding and applying these transformations, we can simplify the process of constructing test statistics.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Math </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Statistics </tag>
+            
+            <tag> Hypothesis Testing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My purpose</title>
       <link href="/2024/05/27/My%20purpose/"/>
       <url>/2024/05/27/My%20purpose/</url>

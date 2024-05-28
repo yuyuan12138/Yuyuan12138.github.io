@@ -192,6 +192,109 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/28/Understanding%20Test%20Statistics%20in%20Hypothesis%20Test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/icon.png">
+      <meta itemprop="name" content="Yuyuan">
+      <meta itemprop="description" content="It is our adventrue.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yuyuan-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/28/Understanding%20Test%20Statistics%20in%20Hypothesis%20Test/" class="post-title-link" itemprop="url">Understanding Test Statistics in Hypothesis Testing</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-05-28 14:33:37 / Modified: 14:34:31" itemprop="dateCreated datePublished" datetime="2024-05-28T14:33:37+08:00">2024-05-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index"><span itemprop="name">Math</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Understanding-Test-Statistics-in-Hypothesis-Testing"><a href="#Understanding-Test-Statistics-in-Hypothesis-Testing" class="headerlink" title="Understanding Test Statistics in Hypothesis Testing"></a>Understanding Test Statistics in Hypothesis Testing</h1><p>In hypothesis testing, constructing test statistics is a crucial and often challenging step. By leveraging known theorems, we can simplify complex problems by transforming them into familiar statistics. Here, I’ll explain some common derivations involving these transformations.</p>
+<h2 id="Transformations-Between-Distributions"><a href="#Transformations-Between-Distributions" class="headerlink" title="Transformations Between Distributions"></a>Transformations Between Distributions</h2><h3 id="Exponential-and-Chi-Square-Distributions"><a href="#Exponential-and-Chi-Square-Distributions" class="headerlink" title="Exponential and Chi-Square Distributions"></a>Exponential and Chi-Square Distributions</h3><p>The relationship between the exponential distribution and the chi-square distribution is foundational in statistics. Suppose we have a random variable $X$ that follows an exponential distribution with parameter $\lambda$:</p>
+<p>$$<br>X \sim Exp(\lambda)<br>$$</p>
+<p>The exponential distribution can be transformed into a chi-square distribution. If we scale $X$ by $2\lambda$, we get a chi-square distribution with two degrees of freedom:</p>
+<p>$$<br>2\lambda X\sim \chi^2(2)<br>$$</p>
+<p>This transformation simplifies the analysis by allowing us to use properties of the chi-square distribution.</p>
+<h3 id="Gamma-and-Chi-Square-Distributions"><a href="#Gamma-and-Chi-Square-Distributions" class="headerlink" title="Gamma and Chi-Square Distributions"></a>Gamma and Chi-Square Distributions</h3><p>The gamma distribution is a generalization of the exponential distribution. If a random variable $Y$ follows a gamma distribution with shape parameter $\alpha$ and rate parameter $\beta$:</p>
+<p>$$<br>Y \sim Gamma(\alpha, \beta)<br>$$</p>
+<p>when $\alpha &#x3D; \frac{k}{2}$ and $\beta &#x3D; \frac{1}{2}$, $Y$ is equivalent to a chi-square distribution with $k$ degrees of freedom:</p>
+<p>$$<br>Y \sim \chi^2(k)<br>$$</p>
+<p>This equivalence is useful for deriving properties and performing tests involving the gamma distribution.</p>
+<h2 id="Sample-Variance-and-Chi-Square-Distribution"><a href="#Sample-Variance-and-Chi-Square-Distribution" class="headerlink" title="Sample Variance and Chi-Square Distribution"></a>Sample Variance and Chi-Square Distribution</h2><p>When dealing with normally distributed samples, the relationship between sample variance and the chi-square distribution is particularly important. For sample of size $n$ from a normal distribution $\mathcal{N}(\mu, \sigma^2)$:</p>
+<p>$$<br>X_1, X_2, \cdots,X_n \sim \mathcal{N}(\mu, \sigma^2)<br>$$</p>
+<p>The sample variance $S^2$ is defined as:</p>
+<p>$$<br>S^2 &#x3D; \frac{1}{n - 1}\sum^n_{i&#x3D;1}(X_i - \bar{X})^2<br>$$</p>
+<p>where $\bar{X}$ is the sample mean. The statistic $(n-1)S^2&#x2F;\sigma^2$ follows a chi-square distribution with $n-1$ degrees of freedom:</p>
+<p>$$<br>\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)<br>$$</p>
+<p>This result is fundamental in constructing confidence intervals and performing hypothesis tests about the population variance.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>By understanding and applying these transformations, we can simplify the process of constructing test statistics.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+     
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/05/27/My%20purpose/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -521,20 +624,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -578,19 +681,19 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">3k</span>
+    <span title="Symbols count total">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3 mins.</span>
+    <span title="Reading time total">5 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">There is 585 words in total.</span>
+  <span class="post-count">There is 942 words in total.</span>
 </div>
 
 
